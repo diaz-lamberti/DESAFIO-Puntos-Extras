@@ -1,6 +1,16 @@
 import random
 
 # Definir clase Dado, con atributos como valor y cara actual
+class Dado():
+    def __init__(self):
+        self.valor = random.randint(1, 6)
+
+dado1 = Dado()
+dado2 = Dado()
+dado3 = Dado()
+dado4 = Dado()
+dado5 = Dado()
+dado6 = Dado()
 
 # Definir clase Jugador con atributos como nombre, puntaje total y puntaje por ronda
 class Jugador():
