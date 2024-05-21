@@ -1,7 +1,11 @@
 import random
 
 # Definir clase Dado, con atributos como valor y cara actual
-
+class Dado():
+    valor = []
+    def tirar(self, cantidad):
+        for i in range(cantidad):
+            self.valor.append(random.randint(1, 6))
 
 # Definir clase Jugador con atributos como nombre, puntaje total y puntaje por ronda
 class Jugador():
@@ -25,6 +29,9 @@ definirTurno(jugadores)
 # Definir clase marcador, llevando la cuenta del puntaje de cada jugador y las combinaciones válidas.
 
 # Simular el lanzamiento de cinco dados utilizando un generador de numeros aleatorios
+dado = Dado()
+dado.tirar(5)
+print(dado.valor)
 
 # Proporcionar una interfaz para mostrar las tiradas de dados, las opciones disponibles y el puntaje actual
 
